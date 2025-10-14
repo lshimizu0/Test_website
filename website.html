@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+  <title>Webpage</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <meta charset="UTF-8">
+  <style>
+    p{
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    button{
+      font-family: 'Courier New', Courier, monospace;
+      color: pink;
+      background-color: black;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.7;
+    }
+    button:active {
+      opacity: 0.3;
+    }
+    .title {
+        font-size: 40px;
+        font-weight: bold;
+        color: purple;
+        text-align: center;
+        font-family: "Brush Script MT", cursive;
+        background-color: rgb(208, 208, 23);
+    }
+    .content {
+      background-color: gray;
+    } 
+    .intro {
+        font-size: 20px;
+        text-align: left;
+        font-family: Arial, sans-serif;
+        color: black;
+        width: 100px; ;
+        border-style: solid;
+        display: inline-block;
+    }
+    .intro-container {
+      display: inline-block;
+    }
+    .button-container {
+      display: inline-block;
+      vertical-align: top;
+     
+    }
+    .button-container button {
+      display: block;
+      width: 100px;
+      height: 36px;
+    }
+    .form-username, .form-password {
+      display: block;
+      
+    }
+
+  </style>
+</head>
+
+
+
+
+
+
+
+
+<body>
+  <p class = "title">Super cool Lucas test website</p>
+  <div class = "content">
+    <div class = "intro-container">
+      <p class = "intro"> Here are some cool options, feel free to choose one.</p>
+    </div>
+    <div class = "button-container">
+      <button>
+        Log in
+      </button>
+      <button>
+        Sign up
+      </button>
+    </div>
+      
+    </div>
+  </div>
+
+  <form class = "sign up" action = "process-form.php" method = "post">
+    <div class = "form-username"> 
+      <label for="username">Username:</label>
+      <input type = "text" placeholder = "Username" id = "username" required></inpput> <!-- Username --> 
+    </div>
+    <br>
+    <div class = "form-password">
+      <label for = "password">Password:</label>
+      <input type = "password" placeholder = "Password" id = "password" required></input> <!-- Password --> 
+    </div>
+    <div class = "form-submit">
+      <button type="submit">Submit</button>
+    </div>
+
+  </form>
+</body>
