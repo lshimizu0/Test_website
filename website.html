@@ -88,15 +88,18 @@
 
   <form class = "sign up" action = "process-form.php" method = "post">
     <div class = "form-username"> 
-      <label for="username">Username:</label>
-      <input type = "text" placeholder = "Username" id = "username" required></inpput> <!-- Username --> 
+      <label for="username">Username</label>
+      <input type = "text" placeholder = "Username" name = "username" id = "username" required></inpput> <!-- Username --> 
     </div>
     <br>
     <div class = "form-password">
       <label for = "password">Password:</label>
-      <input type = "password" placeholder = "Password" id = "password" required></input> <!-- Password --> 
+      <input type = "password" placeholder = "Password" id = "password" name = "password" required></input> 
     </div>
     <div class = "form-submit">
+      <label for = "terms-and-conditions">I agree to the terms and conditions</label>
+      <input type = "checkbox" id = "terms-and-conditions" name = "terms-and-conditions" required>
+            <br>
       <button type="submit">Submit</button>
     </div>
 
