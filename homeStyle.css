@@ -1,0 +1,82 @@
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+    }
+
+    /* HEADER CONTAINER */
+    .Header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap; /* allows wrapping on small screens */
+      border-bottom: 3px solid black;
+      padding: 10px 3%;
+      background-color: #fff;
+    }
+
+    /* LOGO */
+    .UofC-Logo {
+      width: 180px;
+      height: auto;
+    }
+
+    /* NAV LINKS */
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px; /* space between buttons */
+    }
+
+    /* BUTTON LINKS */
+    a {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-family: inherit;
+      text-decoration: none;
+      text-align: center;
+      color: #000;
+      background-color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.5s ease, color 0.5s ease;
+      width: fit-content;
+    }
+
+    a:hover {
+      background-color: #ee0e2c;
+      color: white;
+    }
+
+    /* LOGIN / SIGNUP BUTTONS STACKED */
+    .Login-Signup {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .Login:hover, .Signup:hover {
+      background-color: white;
+      border: 2px solid #ee0e2c;
+      color: #ee0e2c;
+      text-decoration: underline;
+    }
+
+    /* RESPONSIVE ADJUSTMENTS */
+    @media (max-width: 700px) {
+      .Header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .Login-Signup {
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 10px;
+      }
+    }

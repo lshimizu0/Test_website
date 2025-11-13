@@ -1,107 +1,26 @@
 <!DOCTYPE html>
-<head>w
-  <title>Webpage</title>
-  <!-- <link rel="stylesheet" href="style.css"> -->
+<html lang="en">
+<head>
   <meta charset="UTF-8">
-  <style>
-    p{
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-    button{
-      font-family: 'Courier New', Courier, monospace;
-      color: pink;
-      background-color: black;
-      cursor: pointer;
-    }
-    button:hover {
-      opacity: 0.7;
-    }
-    button:active {
-      opacity: 0.3;
-    }
-    .title {
-        font-size: 40px;
-        font-weight: bold;
-        color: purple;
-        text-align: center;
-        font-family: "Brush Script MT", cursive;
-        background-color: rgb(208, 208, 23);
-    }
-    .content {
-      background-color: gray;
-    } 
-    .intro {
-        font-size: 20px;
-        text-align: left;
-        font-family: Arial, sans-serif;
-        color: black;
-        width: 100px; ;
-        border-style: solid;
-        display: inline-block;
-    }
-    .intro-container {
-      display: inline-block;
-    }
-    .button-container {
-      display: inline-block;
-      vertical-align: top;
-     
-    }
-    .button-container button {
-      display: block;
-      width: 100px;
-      height: 36px;
-    }
-    .form-username, .form-password {
-      display: block;
-      
-    }
-
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indigenous Mentorship</title>
+  <link rel="stylesheet" href="homeStyle.css">
 </head>
 
-
-
-
-
-
-
-
 <body>
-  <p class = "title">Indigenous mentorship</p>
-  <div class = "content">
-    <div class = "intro-container">
-      <p class = "intro"> Here are some cool options, feel free to choose one.</p>
-    </div>
-    <div class = "button-container">
-      <button>
-        Log in
-      </button>
-      <button>
-        Sign up
-      </button>
-    </div>
-      
-    </div>
-  </div>
+  <header class="Header">
+    <img class="UofC-Logo" src="Pictures/University_of_Calgary_Logo.png" alt="UofC Logo">
 
-  <form class = "sign up" action = "process-form.php" method = "post">
-    <div class = "form-username"> 
-      <label for="username">Username</label>
-      <input type = "text" placeholder = "Username" name = "username" id = "username" required></inpput> <!-- Username --> 
-    </div>
-    <br>
-    <div class = "form-password">
-      <label for = "password">Password:</label>
-      <input type = "password" placeholder = "Password" id = "password" name = "password" required></input> 
-    </div>
-    <div class = "form-submit">
-      <label for = "terms-and-conditions">I agree to the terms and conditions</label>
-      <input type = "checkbox" id = "terms-and-conditions" name = "terms-and-conditions" required>
-            <br>
-      <button type="submit">Submit</button>
-    </div>
+    <nav>
+      <a href="index.html" class="Home-Button">Home</a>
+      <a href="modules.html" class="Learning-Modules-Button">Learning Modules</a>
+      <a href="about.html" class="About">About</a>
+    </nav>
 
-  </form>
+    <div class="Login-Signup">
+      <a href="login.html" class="Login">Log in</a>
+      <a href="signup.html" class="Signup">Sign up</a>
+    </div>
+  </header>
 </body>
+</html>
