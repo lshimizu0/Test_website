@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indigenous Mentorship – Modules</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background-color: #f7f7f7;
+}
+
+/* HEADER CONTAINER */
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 3px solid black;
+  padding: 10px 3%;
+  background-color: #fff;
+}
+
+/* LOGO */
+.UofC-Logo {
+  width: 180px;
+  height: auto;
+}
+
+/* NAV LINKS */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* BUTTON LINKS */
+a {
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+}
+
+a:hover {
+  background-color: #ee0e2c;
+  color: white;
+}
+
+/* LOGIN / SIGNUP STACK */
+.Login-Signup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.Login:hover,
+.Signup:hover {
+  background-color: white;
+  border-color: #ee0e2c;
+  color: #ee0e2c;
+  text-decoration: underline;
+}
+
+/* MODULE GRID */
+.modules {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* MODULE CARD */
+.module-card {
+  background: linear-gradient(135deg, #ffffff, #f1f1f1);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.12);
+  border: 1px solid #dcdcdc;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.module-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+/* MODULE TITLE */
+.module-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+
+/* LISTS IN CARDS */
+.module-card ul {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE HEADER */
+@media (max-width: 700px) {
+  .Header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .Login-Signup {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="Header">
+  <img class="UofC-Logo" src="Pictures/University_of_Calgary_Logo.png" alt="UofC Logo">
+
+  <nav>
+    <a href="website.html">Home</a>
+    <a href="modules.html">Learning Modules</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <div class="Login-Signup">
+    <a href="login.html" class="Login">Log in</a>
+    <a href="signup.html" class="Signup">Sign up</a>
+  </div>
+</header>
+
+<main>
+  <h1 style="text-align:center; margin-top:40px; margin-bottom:20px;">
+    Indigenous Mentorship Modules
+  </h1>
+
+  <div class="modules">
+
+    <!-- MODULE 1 -->
+    <div class="module-card">
+      <h3>Module 1: Foster Indigenous Identity</h3>
+      <ul>
+        <li>Understand Indigenous identity continuum</li>
+        <li>Connect students to Indigenous community</li>
+        <li>Affirm Indigenous identity</li>
+        <li>Situate one’s own Indigenous identity</li>
+      </ul>
+    </div>
+
+    <!-- MODULE 2 -->
+    <div class="module-card">
+      <h3>Module 2: Abide by Indigenous Ethics</h3>
+      <ul>
+        <li>Follow traditional Indigenous protocols</li>
+        <li>Follow traditional Indigenous etiquette</li>
+      </ul>
+    </div>
+
+    <!-- MODULE 3 -->
+    <div class="module-card">
+      <h3>Module 3: Practice Relationalism</h3>
+      <ul>
+        <li>Practice reciprocity</li>
+        <li>Practice egalitarianism</li>
+        <li>Establish trust</li>
+        <li>Prioritize the personal over the professional</li>
+      </ul>
+    </div>
+
+    <!-- MODULE 4 -->
+    <div class="module-card">
+      <h3>Module 4: Imbue Criticality</h3>
+      <ul>
+        <li>Decolonize theory</li>
+        <li>Develop resiliency</li>
+        <li>Create spaces for critical discussions</li>
+        <li>Bridge crisis of relevance</li>
+        <li>Buffer institutionalized mindset</li>
+      </ul>
+    </div>
+
+    <!-- MODULE 5 -->
+    <div class="module-card">
+      <h3>Module 5: Encourage Self-Advocacy</h3>
+      <ul>
+        <li>Prepare mentee for outside world</li>
+        <li>Empower mentee’s sense of self</li>
+        <li>Encourage mentee to find allies</li>
+      </ul>
+    </div>
+
+    <!-- MODULE 6 -->
+    <div class="module-card">
+      <h3>Module 6: Advocate for Mentees</h3>
+      <ul>
+        <li>Teach colleagues about racism</li>
+        <li>Address unique student difficulties</li>
+        <li>Change the system for future mentees (e.g., include Elders on committees)</li>
+      </ul>
+    </div>
+
+    <!-- MODULE 7 -->
+    <div class="module-card">
+      <h3>Module 7: Utilize a Mentee-Centered Focus</h3>
+      <ul>
+        <li>Tailor mentorship to student's needs</li>
+        <li>Consider holistic development</li>
+        <li>Share responsibilities</li>
+        <li>Support different definitions of success</li>
+        <li>Prioritize student well-being over mentor needs</li>
+      </ul>
+    </div>
+
+  </div>
+</main>
+
+</body>
+</html>

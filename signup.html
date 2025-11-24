@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up – Indigenous Mentorship</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background-color: #f7f7f7;
+}
+
+/* HEADER */
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 3px solid black;
+  padding: 10px 3%;
+  background-color: #fff;
+}
+.UofC-Logo { width: 180px; height: auto; }
+nav { display: flex; gap: 15px; flex-wrap: wrap; }
+
+a {
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+  background: white;
+  border: 2px solid white;
+  transition: 0.4s;
+}
+a:hover {
+  background-color: #ee0e2c;
+  color: white;
+}
+
+.Login-Signup { display: flex; flex-direction: column; gap: 5px; }
+.Login:hover, .Signup:hover {
+  border-color: #ee0e2c;
+  color: #ee0e2c;
+  background: white;
+  text-decoration: underline;
+}
+
+/* SIGNUP FORM */
+.signup-container {
+  width: 400px;
+  padding: 30px;
+  margin: 60px auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.18);
+}
+
+.signup-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 20px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ee0e2c;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #c70c26;
+}
+
+/* TERMS CHECKBOX */
+.terms {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.terms label {
+  margin-left: 8px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #333;
+}
+
+/* MODAL POPUP */
+.modal {
+  display: none; /* hidden by default */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.45);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  width: 80%;
+  max-width: 700px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 26px;
+  cursor: pointer;
+  color: #333;
+  transition: 0.2s;
+}
+.close:hover { color: #ee0e2c; }
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .Header { flex-direction: column; align-items: flex-start; }
+  nav { flex-direction: column; width: 100%; }
+  .Login-Signup { flex-direction: row; }
+  .signup-container { width: 90%; }
+}
+</style>
+
+</head>
+
+<body>
+
+<header class="Header">
+  <img class="UofC-Logo" src="Pictures/University_of_Calgary_Logo.png" alt="UofC Logo">
+
+  <nav>
+    <a href="website.html">Home</a>
+    <a href="modules.html">Learning Modules</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <div class="Login-Signup">
+    <a href="login.html" class="Login">Log in</a>
+    <a href="signup.html" class="Signup">Sign up</a>
+  </div>
+</header>
+
+<!-- SIGN-UP FORM -->
+<div class="signup-container">
+  <h2>Create Your Account</h2>
+
+  <form id="signupForm">
+
+    <input type="text" placeholder="Full Name" name="fullname" required>
+    <input type="email" placeholder="Email Address" name="email" required>
+    <input type="password" placeholder="Password" name="password" required>
+    <input type="password" placeholder="Confirm Password" name="confirmPassword" required>
+
+    <!-- TERMS CHECKBOX -->
+    <div class="terms">
+      <input type="checkbox" id="agree" required>
+      <label for="agree" id="termsBtn">Agree to Terms and Conditions</label>
+    </div>
+
+    <button type="submit">Sign Up</button>
+    
+  </form>
+</div>
+
+<!-- TERMS & CONDITIONS MODAL -->
+<div id="termsModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <h2>Terms & Conditions</h2>
+    <p>
+        By creating an account, you agree to abide by the rules and guidelines set forth by the Indigenous Mentorship Modules platform. 
+        You consent to the collection and use of your personal data in accordance with our Privacy Policy. 
+        You acknowledge that all content provided through the modules is for educational purposes only and should not be considered as professional advice. 
+        The platform reserves the right to modify or terminate services at any time without prior notice. 
+        Users are responsible for maintaining the confidentiality of their account information and for all activities that occur under their account. 
+        Any violation of these terms may result in suspension or termination of your account.
+    </p>
+  </div>
+</div>
+
+
+<script>
+// Show the modal when clicking the label text
+document.getElementById("termsBtn").onclick = function() {
+  document.getElementById("termsModal").style.display = "flex";
+};
+
+// Close modal when clicking X
+document.getElementById("closeModal").onclick = function() {
+  document.getElementById("termsModal").style.display = "none";
+};
+
+// Close modal when clicking outside the box
+window.onclick = function(event) {
+  const modal = document.getElementById("termsModal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+};
+</script>
+
+</body>
+</html>
