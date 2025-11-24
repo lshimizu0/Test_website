@@ -4,7 +4,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Indigenous Mentorship</title>
-  <link rel="stylesheet" href="homeStyle.css">
+<!--  <link rel="stylesheet" href="homeStyle.css">-->
+<style>
+body {
+      margin: 0;
+      font-family: Georgia, serif;
+    }
+
+    /* HEADER CONTAINER */
+    .Header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap; /* allows wrapping on small screens */
+      border-bottom: 3px solid black;
+      padding: 10px 3%;
+      background-color: #fff;
+    }
+
+    /* LOGO */
+    .UofC-Logo {
+      width: 180px;
+      height: auto;
+    }
+
+    /* NAV LINKS */
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px; /* space between buttons */
+    }
+
+    /* BUTTON LINKS */
+    a {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-family: inherit;
+      text-decoration: none;
+      text-align: center;
+      color: #000;
+      background-color: #fff;
+      border: white 2px solid;
+      cursor: pointer;
+      transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+      width: fit-content;
+    }
+
+    a:hover {
+      background-color: #ee0e2c;
+      color: white;
+    }
+
+    /* LOGIN / SIGNUP BUTTONS STACKED */
+    .Login-Signup {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .Login:hover, .Signup:hover {
+      background-color: white;
+      border: 2px solid #ee0e2c;
+      color: #ee0e2c;
+      text-decoration: underline;
+    }
+    main {
+ display: block;
+  width: 100vw;           /* fill viewport width */
+  max-width: 100vw;       /* prevent shrinking */
+  padding: 40px;
+  margin: 0;
+  background-color: #e5e5e5;
+  box-sizing: border-box;
+  
+  }
+.title {
+  display: inline-block;
+  position: relative;
+}
+
+.title h1 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0; /* no space below */
+}
+
+.title h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -50px; /* moves underline DOWN under the <p> */
+  width: 100%;
+  height: 2px;
+  background: black;
+}
+  .description {
+    max-width: 800px;;
+  }
+
+    /* RESPONSIVE ADJUSTMENTS */
+    @media (max-width: 700px) {
+      .Header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .Login-Signup {
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 10px;
+      }
+    }
+    </style>    
+
 </head>
 
 <body>
@@ -12,7 +130,7 @@
     <img class="UofC-Logo" src="Pictures/University_of_Calgary_Logo.png" alt="UofC Logo">
 
     <nav>
-      <a href="index.html" class="Home-Button">Home</a>
+      <a href="website.html" class="Home-Button">Home</a>
       <a href="modules.html" class="Learning-Modules-Button">Learning Modules</a>
       <a href="about.html" class="About">About</a>
     </nav>
@@ -22,5 +140,24 @@
       <a href="signup.html" class="Signup">Sign up</a>
     </div>
   </header>
+  <main>
+    <div class = "title">
+      <h1>Indigenous Mentorship in the Health Sciences</h1>
+      <p>Supporting Identity, Relational Learning, and Culturally Grounded Guidance<p>
+    </div>
+      <div class = "description">
+
+      <p style = "font-size: 22px;">
+        Welcome to the Indigenous Mentorship learning platform.  
+        This module-based course is designed to support learners in understanding  
+        the values, approaches, and teachings that guide Indigenous mentorship.  
+        Through a series of video lessons, reflections, and resources,  
+        participants will explore cultural perspectives, relationship-building practices,  
+        and community-centered approaches that strengthen mentorship in educational  
+        and professional settings.
+      </p>
+    </div>
+     
+  </main>
 </body>
 </html>

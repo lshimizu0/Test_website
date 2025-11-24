@@ -36,9 +36,9 @@
       text-align: center;
       color: #000;
       background-color: #fff;
-      border: none;
+      border: white 2px solid;
       cursor: pointer;
-      transition: background-color 0.5s ease, color 0.5s ease;
+      transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
       width: fit-content;
     }
 
@@ -59,6 +59,18 @@
       color: #ee0e2c;
       text-decoration: underline;
     }
+    main {
+  padding: 40px;
+  max-width: 900px;
+  margin: 40px auto;
+  line-height: 1.6;
+  font-size: 18px;
+  background-color: #e5e5e5;
+  
+  }
+  .title {
+    margin-bottom: 0px;
+  }
 
     /* RESPONSIVE ADJUSTMENTS */
     @media (max-width: 700px) {
