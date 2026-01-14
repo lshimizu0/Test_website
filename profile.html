@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Your Learning Profile</title>
+
+<style>
+body {
+    margin: 0;
+    background: #f7f6f3;
+    color: #1e1e1e;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+h2, h3 {
+    font-family: "Georgia", serif;
+    font-weight: normal;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+/* PROFILE HEADER */
+.profile-header {
+    margin-bottom: 40px;
+}
+
+.profile-header p {
+    margin: 6px 0;
+}
+
+/* MODULES */
+.modules {
+    margin-top: 50px;
+}
+
+.module-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.module {
+    background: #efede8;
+    padding: 20px;
+}
+
+.module.completed {
+    border-left: 4px solid #2a2a2a;
+}
+
+.module h4 {
+    margin-top: 0;
+}
+
+.module p {
+    font-size: 0.9em;
+    color: #444;
+}
+
+/* ACTION */
+.actions {
+    margin-top: 50px;
+}
+
+.actions a {
+    text-decoration: none;
+    color: #fff;
+    background: #2a2a2a;
+    padding: 12px 24px;
+    display: inline-block;
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="container">
+
+    <div class="profile-header">
+        <h2>Your Learning Profile</h2>
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Email:</strong> john.doe@email.com</p>
+    </div>
+
+    <div class="modules">
+        <h3>Completed Modules</h3>
+
+        <div class="module-list">
+            <div class="module completed">
+                <h4>Module 1: Foundations</h4>
+                <p>Completed</p>
+            </div>
+
+            <div class="module completed">
+                <h4>Module 2: Ways of Knowing</h4>
+                <p>Completed</p>
+            </div>
+
+            <div class="module">
+                <h4>Module 3: Community Connections</h4>
+                <p>Not yet completed</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="actions">
+        <a href="profile-edit.html">View or Update Your Information</a>
+    </div>
+
+</div>
+
+</body>
+</html>

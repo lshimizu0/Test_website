@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Update Your Information</title>
+
+<style>
+body {
+    margin: 0;
+    background: #f7f6f3;
+    color: #1e1e1e;
+    font-family: "Inter", Arial, sans-serif;
+    line-height: 1.5;
+}
+
+h2, h3 {
+    font-family: "Georgia", serif;
+    font-weight: normal;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 40px;
+}
+
+.section {
+    background: #efede8;
+    padding: 35px;
+    margin-bottom: 35px;
+}
+
+.section h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+    max-width: 450px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #c2bfb9;
+    background: #fff;
+    font-size: 1em;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1e1e1e;
+}
+
+.note {
+    font-size: 0.9em;
+    color: #444;
+    margin-top: 8px;
+    max-width: 500px;
+}
+
+.actions {
+    margin-top: 40px;
+}
+
+button {
+    padding: 12px 28px;
+    background: #2a2a2a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95em;
+}
+
+button:hover {
+    background: #000;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Update Your Information</h2>
+    <p>Fill in any information you want to update below. Leave fields blank if you don’t want to change them.</p>
+
+    <form method="post" action="update-profile.php">
+
+        <!-- ACCOUNT INFORMATION -->
+        <div class="section">
+            <h3>Account Information</h3>
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input 
+                    type="text" 
+                    id="username" 
+                    name="username"
+                    placeholder="Enter a new username"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email"
+                    placeholder="Enter a new email address"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="password">New Password</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password"
+                    placeholder="Enter a new password"
+                >
+            </div>
+        </div>
+
+        <!-- OPTIONAL INFORMATION -->
+        <div class="section">
+            <h3>Learning Information (Optional)</h3>
+
+            <div class="form-group">
+                <label for="preferred_name">Preferred Name</label>
+                <input 
+                    type="text" 
+                    id="preferred_name" 
+                    name="preferred_name"
+                    placeholder="Enter a preferred name (optional)"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Notes or preferences</label>
+                <input 
+                    type="text" 
+                    id="notes" 
+                    name="notes"
+                    placeholder="Enter any notes or preferences (optional)"
+                >
+            </div>
+
+            <div class="note">
+                Your information is private and only used to support your learning.
+            </div>
+        </div>
+
+        <div class="actions">
+            <button type="submit">Save Updates</button>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
